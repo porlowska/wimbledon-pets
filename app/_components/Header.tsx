@@ -70,7 +70,7 @@ export default function Header() {
       >
         {/** Company logo  */}
         <div className="flex lg:flex-1">
-          <Logo w={80} h={40} />
+          <Logo className="text-gray-900" w={80} h={40} />
         </div>
 
         {/** Mobile dropdown menu */}
