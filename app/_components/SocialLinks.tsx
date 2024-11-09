@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Link from "next/link";
 import {
   FaFacebookF,
@@ -26,7 +26,7 @@ const socials = [
     icon: FaWhatsapp,
   },
   {
-    name: "YpuTube",
+    name: "YouTube",
     href: "https://www.youtube.com/watch?v=rjiWa2QsIqY&feature=youtu.be",
     icon: FaYoutube,
   },

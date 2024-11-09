@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 type LogoProps = {
-  className: string;
+  className?: string;
   w: number;
   h: number;
 };
@@ -21,7 +21,6 @@ const Logo = ({ className, w, h }: LogoProps) => {
           width={w}
           height={h}
           priority
-          unoptimized
         />
         <span>Wimbledon Pets</span>
       </Link>
