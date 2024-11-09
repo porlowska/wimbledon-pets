@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  font-weight: 200; 
+}
+
+h1 {
+  font-weight: 500; 
+}
+
