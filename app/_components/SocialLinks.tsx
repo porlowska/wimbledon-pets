@@ -51,6 +51,8 @@ const SocialLinks = ({ className }: any) => {
             key={item.name}
             href={item.href}
             className="text-whiteish hover:text-secondary"
+            target="_blank"
+            rel="noreferrer"
           >
             <span className="sr-only">{item.name}</span>
             <item.icon aria-hidden="true" className="h-6 w-6" />

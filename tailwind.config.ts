@@ -9,18 +9,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        whiteish: '#fafafa',
-        primary: '#114430',
-        secondary: '#F04F7A',
+        whiteish: "#fafafa",
+        primary: "#114430",
+        secondary: "#F04F7A",
       },
       fontWeight: {
-        light: "200",    // for general text
+        light: "200", // for general text
         semibold: "500", // for h1 headers
       },
       fontFamily: {
         barlow: ["Barlow", "sans-serif"],
+      },
     },
   },
-},
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 } satisfies Config;

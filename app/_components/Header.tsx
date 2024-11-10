@@ -1,12 +1,9 @@
 "use client";
-import Link from "next/link";
 import { useState } from "react";
+//components
+import Link from "next/link";
 import Logo from "./Logo";
-import { MdPets, MdClose } from "react-icons/md";
-import { GiDogHouse, GiJumpingDog } from "react-icons/gi";
-import { SiDatadog } from "react-icons/si";
-import { FaHouseChimneyUser, FaBars, FaChevronDown } from "react-icons/fa6";
-
+import Button from './Button'
 import {
   Dialog,
   DialogPanel,
@@ -18,6 +15,13 @@ import {
   PopoverGroup,
   PopoverPanel,
 } from "@headlessui/react";
+//icons
+import { MdPets, MdClose } from "react-icons/md";
+import { GiDogHouse, GiJumpingDog } from "react-icons/gi";
+import { SiDatadog } from "react-icons/si";
+import { FaHouseChimneyUser, FaBars, FaChevronDown } from "react-icons/fa6";
+
+
 
 const services = [
   {
