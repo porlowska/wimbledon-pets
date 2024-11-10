@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import Button from "./Button";
+import { services } from "../_data/services";
 import {
   Dialog,
   DialogPanel,
@@ -16,43 +17,8 @@ import {
   PopoverPanel,
 } from "@headlessui/react";
 //icons
-import { MdPets, MdClose } from "react-icons/md";
-import { GiDogHouse, GiJumpingDog } from "react-icons/gi";
-import { SiDatadog } from "react-icons/si";
-import { FaHouseChimneyUser, FaBars, FaChevronDown } from "react-icons/fa6";
-
-const services = [
-  {
-    name: "All Services",
-    description: "All services we provide at Wimbledon Pets",
-    href: "/services",
-    icon: SiDatadog,
-  },
-  {
-    name: "Dog Training",
-    description: "Professional positive reinforcemnt training.",
-    href: "/services/dog-training",
-    icon: GiJumpingDog,
-  },
-  {
-    name: "Dog Walking",
-    description: "Daily or occasional dog walking services.",
-    href: "/services/dog-walking",
-    icon: MdPets,
-  },
-  {
-    name: "Pet & House Sitting",
-    description: "Reliable pet and house sitting while you’re away.",
-    href: "/services/house-sitting",
-    icon: FaHouseChimneyUser,
-  },
-  {
-    name: "Dog Boarding",
-    description: "Safe, comfortable in house boarding for your dog.",
-    href: "/services/dog-boarding",
-    icon: GiDogHouse,
-  },
-];
+import { MdClose } from "react-icons/md";
+import { FaBars, FaChevronDown } from "react-icons/fa6";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
