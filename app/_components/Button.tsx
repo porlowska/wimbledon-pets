@@ -6,6 +6,7 @@ type ButtonProps = {
   variant?: number;
   className?: string;
   href?: any;
+  icon?: any;
   handleClick?: () => void;
 };
 
@@ -15,6 +16,7 @@ const Button = ({
   variant,
   className,
   href,
+  icon,
   handleClick,
 }: ButtonProps) => {
   if (variant === 1) {
@@ -38,6 +40,7 @@ const Button = ({
           className={` ${className} rounded-lg px-4 py-2.5 text-md font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 `}
           onClick={handleClick}
         >
+          {icon}
           {text}
         </button>
       )}

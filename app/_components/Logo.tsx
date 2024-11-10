@@ -3,12 +3,20 @@ import Link from "next/link";
 import Image from "next/image";
 
 type LogoProps = {
-  className?: string;
   w: number;
   h: number;
+  variant?: number | null;
+  className?: string;
 };
 
-const Logo = ({ className, w, h }: LogoProps) => {
+const Logo = ({ w, h, variant, className }: LogoProps) => {
+  let logo = "/black-logo.png";
+  if (variant === 1) {
+    logo = "/white-logo.png";
+    className = `${className} text-whiteish`;
+  } else if (variant === 2) {
+    className = `${className} text-black`;
+  }
   return (
     <>
       <Link
@@ -16,7 +24,7 @@ const Logo = ({ className, w, h }: LogoProps) => {
         className={`${className} flex items-center  font-semibold text-xl md:text-3xl`}
       >
         <Image
-          src="/logo.png"
+          src={logo}
           alt="Wimbledon Pets Logo"
           width={w}
           height={h}
