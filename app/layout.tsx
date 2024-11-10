@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={barlow.className}>
+      <body className={`bg-whiteish ${barlow.className}`}>
         <Header />
         {children}
         <Footer />

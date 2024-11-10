@@ -3,7 +3,7 @@ import { useState } from "react";
 //components
 import Link from "next/link";
 import Logo from "./Logo";
-import Button from './Button'
+import Button from "./Button";
 import {
   Dialog,
   DialogPanel,
@@ -20,8 +20,6 @@ import { MdPets, MdClose } from "react-icons/md";
 import { GiDogHouse, GiJumpingDog } from "react-icons/gi";
 import { SiDatadog } from "react-icons/si";
 import { FaHouseChimneyUser, FaBars, FaChevronDown } from "react-icons/fa6";
-
-
 
 const services = [
   {
@@ -154,12 +152,13 @@ export default function Header() {
         </PopoverGroup>
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link
-            href="/book-now"
-            className="text-md/6 font-semibold text-whiteish px-8 py-2 bg-secondary rounded-lg "
-          >
-            Book Now!
-          </Link>
+          <Button
+            href={"/book-now"}
+            isLink={true}
+            text="Book Now"
+            variant={2}
+            className="px-8"
+          />
         </div>
       </nav>
 
