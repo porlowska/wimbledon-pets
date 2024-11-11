@@ -10,9 +10,9 @@ type LogoProps = {
 };
 
 const Logo = ({ w, h, variant, className }: LogoProps) => {
-  let logo = "/black-logo.png";
+  let logo = "/logo/black-logo.png";
   if (variant === 1) {
-    logo = "/white-logo.png";
+    logo = "/logo/white-logo.png";
     className = `${className} text-whiteish`;
   } else if (variant === 2) {
     className = `${className} text-black`;

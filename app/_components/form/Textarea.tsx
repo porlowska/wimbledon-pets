@@ -2,17 +2,23 @@ type TextareaProps = {
   textareaLabel: string;
   rows: number;
   defaultValue?: string | "";
+  helperText?: string;
 };
-const Textarea= ({textareaLabel, defaultValue, rows}:TextareaProps) => {
+const Textarea = ({
+  textareaLabel,
+  defaultValue,
+  rows,
+  helperText,
+}: TextareaProps) => {
   return (
     <div>
-      <label
-        htmlFor={textareaLabel}
-        className="block text-sm/6 font-medium text-gray-900"
-      >
-        {textareaLabel}
-      </label>
-      <div className="mt-2">
+      <div className="relative mt-2">
+        <label
+          htmlFor={textareaLabel}
+          className="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-900"
+        >
+          {textareaLabel}
+        </label>
         <textarea
           id={textareaLabel}
           name={textareaLabel}
@@ -21,7 +27,12 @@ const Textarea= ({textareaLabel, defaultValue, rows}:TextareaProps) => {
           defaultValue={defaultValue}
         />
       </div>
+      {helperText !== null ? (
+        <p id={textareaLabel} className="mt-2 text-xs text-gray-600">
+          {helperText}
+        </p>
+      ) : null}
     </div>
   );
-}
+};
 export default Textarea;
