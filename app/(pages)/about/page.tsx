@@ -1,6 +1,13 @@
-export default function About() {
-    return (
-      <div><h1>About</h1></div>
-    );
-  }
-  
+import Banner from "@/app/_components/about/Banner";
+import Team from "@/app/_components/about/Team";
+
+const About = () => {
+  return (
+    <div>
+      <Banner />
+      <Team variable="current" />
+      <Team variable="recommended" />
+    </div>
+  );
+};
+export default About;
