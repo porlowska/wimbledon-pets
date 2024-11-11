@@ -1,56 +1,28 @@
 "use client";
 import Link from "next/link";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaWhatsapp,
-  FaYoutube,
-} from "react-icons/fa";
-import { SiTrustpilot } from "react-icons/si";
-import { TbSquareLetterR } from "react-icons/tb";
+import { socials } from "../_data/socials";
 
-const socials = [
-  {
-    name: "Facebook",
-    href: "https://www.facebook.com/wimbledon.pets/",
-    icon: FaFacebookF,
-  },
-  {
-    name: "Instagram",
-    href: "https://www.instagram.com/wimbledon_pets/",
-    icon: FaInstagram,
-  },
-  {
-    name: "Whatsapp",
-    href: "https://wa.me/+447494532324",
-    icon: FaWhatsapp,
-  },
-  {
-    name: "YouTube",
-    href: "https://www.youtube.com/watch?v=rjiWa2QsIqY&feature=youtu.be",
-    icon: FaYoutube,
-  },
-  {
-    name: "Trustpilot",
-    href: "https://uk.trustpilot.com/review/wimbledon-pets.co.uk",
-    icon: SiTrustpilot,
-  },
-  {
-    name: "Rover",
-    href: "https://www.rover.com/members/paulina-o-welcome-you-with-open-paws-when-you-cant-be-there/",
-    icon: TbSquareLetterR,
-  },
-];
+type linksProps = {
+  divClassName?: string;
+  iconClassName: string;
+  variant?: "review" | "social" | null;
+};
+const SocialLinks = ({ divClassName, iconClassName, variant }: linksProps) => {
+  let socialLinks = socials;
 
-const SocialLinks = ({ className }: any) => {
+  if (variant === "review") {
+    socialLinks = socials.slice(4);
+  } else if (variant === "social") {
+    socialLinks = socials.slice(0, 2);
+  }
   return (
     <>
-      <div className={`${className} flex justify-center gap-x-10`}>
-        {socials.map((item) => (
+      <div className={`${divClassName} flex justify-center gap-x-10`}>
+        {socialLinks.map((item) => (
           <Link
             key={item.name}
             href={item.href}
-            className="text-whiteish hover:text-secondary"
+            className={iconClassName}
             target="_blank"
             rel="noreferrer"
           >

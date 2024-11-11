@@ -43,7 +43,10 @@ export default function Footer() {
             </Link>
           ))}
         </nav>
-        <SocialLinks className={"mt-16"} />
+        <SocialLinks
+          divClassName={"mt-16"}
+          iconClassName="text-whiteish hover:text-secondary"
+        />
 
         <p className="mt-10 text-center text-sm/6 text-gray-400">
           &copy; 2024 Wimbledon Pets. Created by Polly Orlowska. All rights
