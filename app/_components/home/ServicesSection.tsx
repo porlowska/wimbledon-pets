@@ -1,4 +1,6 @@
+"use client";
 import { services } from "@/app/_data/services";
+import Link from "next/link";
 
 const ServicesSection = () => {
   return (
@@ -16,9 +18,12 @@ const ServicesSection = () => {
                 aria-hidden="true"
                 className="flex items-end p-4 opacity-0 group-hover:opacity-100"
               >
-                <div className="w-full rounded-full bg-primary bg-opacity-75 px-4 py-2 text-center text-sm font-medium text-whiteish backdrop-blur backdrop-filter">
+                <Link
+                  href={service.href}
+                  className="w-full rounded-full bg-primary bg-opacity-75 px-4 py-2 text-center text-sm font-medium text-whiteish backdrop-blur backdrop-filter"
+                >
                   {service.name}
-                </div>
+                </Link>
               </div>
             </div>
           </div>

@@ -93,7 +93,7 @@ const Banner = () => {
                   <div className="relative">
                     <img
                       alt=""
-                      src="/example.png"
+                      src="/placeholders/placeholder3.jpeg"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -103,7 +103,7 @@ const Banner = () => {
                   <div className="relative">
                     <img
                       alt=""
-                      src="/example.png"
+                      src="/placeholders/4.jpeg"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -111,7 +111,7 @@ const Banner = () => {
                   <div className="relative">
                     <img
                       alt=""
-                      src="/example.png"
+                      src="/placeholders/5.jpeg"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -121,7 +121,7 @@ const Banner = () => {
                   <div className="relative">
                     <img
                       alt=""
-                      src="/example.png"
+                      src="/placeholders/6.jpeg"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -129,7 +129,7 @@ const Banner = () => {
                   <div className="relative">
                     <img
                       alt=""
-                      src="/example.png"
+                      src="/placeholders/7.jpeg"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />

@@ -5,7 +5,7 @@ export const featuredTestimonial = {
   author: {
     owner: "Dariel P",
     pet: "Crumble",
-    imageUrl: "/example.png",
+    imageUrl: "/reviews/crumble.png",
   },
 };
 export const testimonials = [
@@ -19,7 +19,7 @@ export const testimonials = [
         author: {
           owner: "Kyle B",
           pet: "Theo",
-          imageUrl: "/example.png",
+          imageUrl: "/reviews/theo.jpg",
         },
       },
       {
@@ -29,7 +29,7 @@ export const testimonials = [
         author: {
           owner: "Helen G",
           pet: "Dora",
-          imageUrl: "/example.png",
+          imageUrl: "/reviews/dora.png",
         },
       },
       {
@@ -39,7 +39,7 @@ export const testimonials = [
         author: {
           owner: "Aleya A",
           pet: "Bella",
-          imageUrl: "/example.png",
+          imageUrl: "/reviews/bella.jpg",
         },
       },
       {
@@ -49,7 +49,7 @@ export const testimonials = [
         author: {
           owner: "David G",
           pet: "Winnie",
-          imageUrl: "/example.png",
+          imageUrl: "/reviews/winnie.jpeg",
         },
       },
       // More testimonials...
@@ -63,7 +63,7 @@ export const testimonials = [
         author: {
           owner: "Matthew T",
           pet: "Brie & Bruice",
-          imageUrl: "/example.png",
+          imageUrl: "/reviews/bb.jpeg",
         },
       },
       {
@@ -73,7 +73,7 @@ export const testimonials = [
         author: {
           owner: "Samantha G",
           pet: "Forest",
-          imageUrl: "/example.png",
+          imageUrl: "/reviews/forest.png",
         },
       },
 
@@ -90,7 +90,7 @@ export const testimonials = [
         author: {
           owner: "Jenny C",
           pet: "Astro & Waffle",
-          imageUrl: "/example.png",
+          imageUrl: "/reviews/aw.png",
         },
       },
       {
@@ -100,7 +100,7 @@ export const testimonials = [
         author: {
           owner: "Alejandro C",
           pet: "Billy",
-          imageUrl: "/example.png",
+          imageUrl: "/reviews/billy.png",
         },
       },
       // More testimonials...
@@ -114,7 +114,7 @@ export const testimonials = [
         author: {
           owner: "Lisa T",
           pet: "Biscuit",
-          imageUrl: "/example.png",
+          imageUrl: "/placeholders/placeholder1.jpeg",
         },
       },
       {
@@ -124,7 +124,7 @@ export const testimonials = [
         author: {
           owner: "Tom S",
           pet: "Percy",
-          imageUrl: "/example.png",
+          imageUrl: "/reviews/percy.jpeg",
         },
       },
       {
@@ -134,7 +134,7 @@ export const testimonials = [
         author: {
           owner: "Candice P",
           pet: "Kobe & Peggy",
-          imageUrl: "/example.png",
+          imageUrl: "/reviews/kobe.png",
         },
       },
       {
@@ -144,7 +144,7 @@ export const testimonials = [
         author: {
           owner: "Daniel P",
           pet: "Whisky",
-          imageUrl: "/example.png",
+          imageUrl: "/reviews/whisky.png",
         },
       },
       // More testimonials...
