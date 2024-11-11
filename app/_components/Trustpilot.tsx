@@ -34,7 +34,6 @@ const Trustpilot = ({ leaveReview, rating, reviews }: TrustpilotProps) => {
             <span className="font-semibold text-black text-xl my-1">
               Excellent
             </span>
-
             <div
               className="flex space-x-1 p-2 gap-2 my-1"
               style={{
