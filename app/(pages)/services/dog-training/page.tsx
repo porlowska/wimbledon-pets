@@ -1,6 +1,7 @@
-export default function About() {
-    return (
-      <div><h1>dog-training</h1></div>
-    );
-  }
-  
+import ServiceLayout from "@/app/_components/services/ServiceLayout";
+import { services } from "@/app/_data/services";
+
+const Training = () => {
+  return <ServiceLayout service={services[1]} />;
+};
+export default Training;
