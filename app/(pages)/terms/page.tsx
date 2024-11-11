@@ -1,7 +1,7 @@
 import { tc } from "@/app/_data/tc";
 const Terms = () => {
   return (
-    <div className="bg-white px-6 py-32 lg:px-8">
+    <div className=" px-6 py-32 lg:px-8">
       <div className="mx-auto max-w-3xl text-base/7 text-gray-900">
         <p className="text-xl font-semibold text-secondary">
           Terms and Conditions
