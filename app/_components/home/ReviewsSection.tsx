@@ -1,4 +1,6 @@
 import { featuredTestimonial, testimonials } from "../../_data/testimonials";
+import SocialLinks from "../SocialLinks";
+import Trustpilot from "../Trustpilot";
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
@@ -36,15 +38,16 @@ const ReviewsSection = () => {
           <h2 className="text-base/7 font-semibold text-secondary">
             Testimonials
           </h2>
-          <p className="mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+          <p className="my-6 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             What Our{" "}
             <span className="text-primary hover:underline hover:underline-offset-8">
               Happy
             </span>{" "}
             Clients Say
           </p>
+          <Trustpilot leaveReview={false} rating={4.5} reviews={15} />
         </div>
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-gray-900 sm:mt-16 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
           <figure className="rounded-2xl bg-whiteish shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
             <blockquote className="p-6 text-lg tracking-tight text-gray-900 sm:p-12 sm:text-xl/8">
               <p>{`“${featuredTestimonial.comment}”`}</p>
