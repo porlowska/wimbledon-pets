@@ -50,6 +50,11 @@ const ServiceLayout = ({ service }: servicesProps) => {
                 {service.name}
               </h1>
             </div>
+            <div className="mt-6 space-y-4 text-gray-700 text-lg">
+              {service.body.slice(0, 3).map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
           </div>
         </div>
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
@@ -62,8 +67,8 @@ const ServiceLayout = ({ service }: servicesProps) => {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">
-              <div className="my-6 space-y-4 text-gray-700 text-lg">
-                {service.body.map((paragraph, index) => (
+              <div className="mb-10 space-y-2 text-gray-700 text-lg">
+                {service.body.slice(3).map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
               </div>
