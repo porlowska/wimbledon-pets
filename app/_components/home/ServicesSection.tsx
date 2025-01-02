@@ -20,7 +20,7 @@ const ServicesSection = () => {
               >
                 <Link
                   href={service.href}
-                  className="w-full rounded-full bg-primary bg-opacity-75 px-4 py-2 text-center text-sm font-medium text-whiteish backdrop-blur backdrop-filter"
+                  className="w-full rounded-full bg-secondary bg-opacity-75 px-4 py-2 text-center text-sm font-medium text-whiteish backdrop-blur backdrop-filter"
                 >
                   {service.name}
                 </Link>

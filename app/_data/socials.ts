@@ -7,6 +7,14 @@ import {
 import { SiTrustpilot } from "react-icons/si";
 import { TbSquareLetterR } from "react-icons/tb";
 
+
+export const companyData = {
+  name: "Wimbledon Pets",
+  phone: ["07494 532324", "+447494 532324"],
+  location: "Wimbledon, London",
+  email: "hello@wimbledon-pets.co.uk",
+};
+
 export const socials = [
   {
     name: "Facebook",

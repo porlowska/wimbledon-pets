@@ -2,7 +2,8 @@ import Button from "@/app/_components/Button";
 import Input from "@/app/_components/form/Input";
 import Textarea from "@/app/_components/form/Textarea";
 import SocialLinks from "@/app/_components/SocialLinks";
-import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { companyData } from "@/app/_data/socials";
+import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
 const BookNow = () => {
   return (
@@ -49,22 +50,38 @@ const BookNow = () => {
                   <span className="sr-only">Address</span>
                   <FaMapMarkerAlt
                     aria-hidden="true"
-                    className="h-7 w-6 text-primary"
+                    className="h-6 w-6 hover:text-secondary text-primary"
                   />
                 </dt>
-                <dd>Wimbledon, London</dd>
+                <dd>{companyData.location}</dd>
               </div>
+
+              <div className="flex gap-x-4">
+                <dt className="flex-none">
+                  <span className="sr-only">e-mail</span>
+                  <FaEnvelope
+                    aria-hidden="true"
+                    className="h-6 w-6 hover:text-secondary text-primary"
+                  />
+                </dt>
+                <dd>
+                  <a href={`mailto:${companyData.email}`}>
+                    {companyData.email}
+                  </a>
+                </dd>
+              </div>
+
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Telephone</span>
                   <FaPhoneAlt
                     aria-hidden="true"
-                    className="h-7 w-6 text-primary"
+                    className="h-6 w-6 hover:text-secondary text-primary"
                   />
                 </dt>
                 <dd>
-                  <a href="tel:+447494532324" className="hover:text-gray-900">
-                    0 7494 532324
+                  <a href={`tel:${companyData.phone[1]}`}>
+                    {companyData.phone[0]}
                   </a>
                 </dd>
               </div>
@@ -76,12 +93,13 @@ const BookNow = () => {
           </div>
         </div>
         <form
-          data-netlify="true"
+          //data-netlify="true"
           name="book-now"
-          action="#"
-          method="POST"
+          //action="#"
+          //method="POST"
           className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
         >
+          <input type="hidden" name="book-now" value="book-now" />
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <Input inputLabel={"Your Name"} type={"text"} />
@@ -103,7 +121,12 @@ const BookNow = () => {
               </div>
             </div>
             <div className="mt-8 flex justify-center">
-              <Button isLink={false} text={"Send message"} variant={2} />
+              <Button
+                isLink={false}
+                text={"Send message"}
+                variant={2}
+                btnType="submit"
+              />
             </div>
           </div>
         </form>
