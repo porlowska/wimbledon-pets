@@ -33,7 +33,7 @@ const Banner = () => {
 
         <div className="mt-12 sm:mt-24 lg:mt-0 shrink lg:shrink-0 lg:grow">
           <Image
-            src="/doggos.png"
+            src="/doggos.webp"
             alt="picture of happy dogs"
             width={600}
             height={600}
