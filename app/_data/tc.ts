@@ -16,7 +16,7 @@ export const tc = [
     body: [
       "2.1 The Sitter will discuss the amount to be paid for services with the owner.",
       "2.2 Additional fees may include the purchase of necessary items for the care of the pet(s), including but not limited to pet food, litter or cleaning supplies, transportation, unexpected visits, and emergency expenses for health care. The Sitter shall retain and submit receipts as proof of additional expenses.",
-      "2.3 The amount shall be payable in advance on:\n\nAccount holder: Wimbledon-Pets\nAccount Number: 1032007\nSort code: 20 57 76",
+      "2.3 The amount shall be payable in advance on:\n\nAccount holder: Paulina Orlowska\nAccount Number: 16125304\nSort code: 04-00-75",
     ],
   },
   {
@@ -28,7 +28,7 @@ export const tc = [
       '3.1.2 For further requests, please follow "current clients" below.',
       "3.2 Current Clients",
       "3.2.1 To book a service you shall request it through Pet Sitter Plus.",
-      "3.2.2 Service request DOES NOT equal SERVICE BOOKED. When the service is accepted and booked, you will receive a confirmation email.",
+      "3.2.2 Service request DOES NOT equal SERVICE BOOKED. When the service is accepted and booked, you will receive a confirmation message on WhatsApp.",
       "3.2.3 The price list is provided in links in the footer. Each dog will be assessed and the basic price plus any add-ons will be agreed upon.",
       "3.3 Additional Fees",
       "3.3.1 In the event that the sitter is required to stay overtime, there is an additional fee of £10/h.",
