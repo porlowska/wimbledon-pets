@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 type ButtonProps = {
+  btnType?: "button" | "submit" | "reset";
   isLink: boolean;
   text: string;
   variant?: number;
@@ -11,6 +12,7 @@ type ButtonProps = {
 };
 
 const Button = ({
+  btnType,
   isLink,
   text,
   variant,
@@ -36,7 +38,7 @@ const Button = ({
         </Link>
       ) : (
         <button
-          type="button"
+          type={btnType}
           className={` ${className} rounded-lg px-4 py-2.5 text-md font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 `}
           onClick={handleClick}
         >
