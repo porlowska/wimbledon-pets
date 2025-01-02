@@ -15,6 +15,14 @@ type servicesProps = {
 const ServiceLayout = ({ service }: servicesProps) => {
   return (
     <div className="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+      <div className="absolute top-20 left-20 z-20">
+        <Button
+          isLink={true}
+          text={"back to all services"}
+          href={"/services"}
+          className="text-gray-400 hover:text-primary focus-visible:outline-primary text-sm"
+        />
+      </div>
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
