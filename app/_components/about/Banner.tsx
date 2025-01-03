@@ -93,7 +93,7 @@ const Banner = () => {
                   <div className="relative">
                     <img
                       alt=""
-                      src="/placeholders/placeholder3.jpeg"
+                      src="/placeholders/dog-7.webp"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -103,7 +103,7 @@ const Banner = () => {
                   <div className="relative">
                     <img
                       alt=""
-                      src="/placeholders/4.jpeg"
+                      src="/placeholders/dog-1.webp"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -111,7 +111,7 @@ const Banner = () => {
                   <div className="relative">
                     <img
                       alt=""
-                      src="/placeholders/5.jpeg"
+                      src="/placeholders/dog-2.webp"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -121,7 +121,7 @@ const Banner = () => {
                   <div className="relative">
                     <img
                       alt=""
-                      src="/placeholders/6.jpeg"
+                      src="/placeholders/dog-3.webp"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -129,7 +129,7 @@ const Banner = () => {
                   <div className="relative">
                     <img
                       alt=""
-                      src="/placeholders/7.jpeg"
+                      src="/placeholders/dog-4.webp"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />

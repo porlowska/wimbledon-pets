@@ -1,16 +1,10 @@
-import type { Metadata } from "next";
 import { Barlow } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const barlow = Barlow({ weight: ["200", "500"], subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Wimbledon Pets",
-  description:
-    "Dog Care services in Lonodon - Dog Sitting, House Sitting, Dog Boaring, and Dog Training",
-};
 
 export default function RootLayout({
   children,
@@ -24,6 +18,7 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-T477M1E07C" />
     </html>
   );
 }
