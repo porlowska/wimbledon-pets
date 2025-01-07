@@ -12,9 +12,7 @@ export const metadata: Metadata = globalMetadata.home;
 export default function Home() {
   return (
     <>
-      <StructuredData
-        data={organizationStructuredData.home}
-      />
+      <StructuredData data={organizationStructuredData.home} />
       <Banner />
       <div className="h-100">
         <AboutSection />
