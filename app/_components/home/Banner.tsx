@@ -50,6 +50,7 @@ export default function Banner() {
         </div>
         <motion.div
           className="bg-whiteish lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
+          variants={fadeIn}
           initial={fadeIn.initial}
           animate={fadeIn.animate}
           transition={fadeIn.transition}
