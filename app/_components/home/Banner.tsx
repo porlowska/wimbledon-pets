@@ -1,8 +1,11 @@
+"use client";
 import Button from "../Button";
+import { motion } from "framer-motion";
+import { fadeIn, zoomIn } from "@/app/animations/animations";
 
 export default function Banner() {
   return (
-    <div className="bg-whiteish">
+    <div className="bg-whiteish overflow-hidden">
       <div className="relative">
         <div className="mx-auto max-w-7xl">
           <div className="relative z-10 lg:w-full lg:max-w-2xl">
@@ -45,13 +48,19 @@ export default function Banner() {
             </div>
           </div>
         </div>
-        <div className="bg-whiteish lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <motion.div
+          className="bg-whiteish lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
+          initial={fadeIn.initial}
+          animate={fadeIn.animate}
+          transition={fadeIn.transition}
+          whileHover={zoomIn}
+        >
           <img
             alt="founder with one of dogs"
             src="/team/polly.webp"
             className="aspect-[1/1] md:aspect-[3/2] object-cover lg:aspect-auto lg:size-full"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
