@@ -1,47 +1,58 @@
-"use client";
 import Button from "../Button";
-import Image from "next/image";
 
-const Banner = () => {
+export default function Banner() {
   return (
-    <div className=" bg-gradient-to-b from-primary from-75% to-whiteish to-75% p-12">
-      <div className="mx-auto max-w-7xl px-6 flex flex-col md:flex-row lg:items-center lg:gap-x-10 lg:px-8 lg:py-30">
-        {/** Header Text */}
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-          <h1 className="mt-4 text-pretty font-semibold tracking-tight text-whiteish md:text-4xl lg:text-7xl text-5xl">
-            Wimbledon <span className="text-secondary">Pets</span>
-          </h1>
-          <p className="mt-8 text-pretty  font-medium text-whiteish md:text-4xl text-xl">
-            Welcomes You with open paws when you can't be there
-          </p>
+    <div className="bg-whiteish">
+      <div className="relative">
+        <div className="mx-auto max-w-7xl">
+          <div className="relative z-10 lg:w-full lg:max-w-2xl">
+            <svg
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+              className="absolute inset-y-0 right-8 hidden h-full w-80 translate-x-1/2 transform fill-whiteish lg:block"
+            >
+              <polygon points="0,0 90,0 50,100 0,100" />
+            </svg>
 
-          <div className="mt-10 flex items-center gap-x-6">
-            <Button
-              isLink={true}
-              href={"/book-now"}
-              text="Book Now!"
-              variant={2}
-            />
-            <Button
-              isLink={true}
-              href={"/services"}
-              text="Explore our services"
-              className="bg-rose-200 text-black hover:rose-400 focus-visible:outline-secondary text-nowrap"
-            />
+            <div className="relative px-6 py-28 sm:py-36 lg:px-8 lg:py-52 lg:pr-0">
+              <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
+                <h1 className="text-pretty text-5xl font-bold tracking-tight text-primary sm:text-7xl">
+                  Wimbledon <span className="text-secondary">Pets</span>
+                </h1>
+                <p className="ml-2 mt-8 text-pretty text-lg  text-primary sm:text-xl/8">
+                  Welcomes You with open paws when you can't be there! <br></br>
+                  Pet care services in safe and comfortable environment,
+                  servicing London.
+                </p>
+                <div className="mt-10 flex items-center gap-x-6">
+                  <Button
+                    isLink={true}
+                    href={"/book-now"}
+                    text="Book Now!"
+                    variant={2}
+                    className="text-nowrap"
+                  />
+                  <Button
+                    isLink={true}
+                    href={"/services"}
+                    text="Explore our services"
+                    variant={1}
+                    className="text-nowrap"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div className="mt-12 sm:mt-24 lg:mt-0 shrink lg:shrink-0 lg:grow">
-          <Image
-            src="/doggos.webp"
-            alt="picture of happy dogs"
-            width={600}
-            height={600}
+        <div className="bg-whiteish lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+          <img
+            alt="founder with one of dogs"
+            src="/team/polly.webp"
+            className="aspect-[1/1] md:aspect-[3/2] object-cover lg:aspect-auto lg:size-full"
           />
         </div>
       </div>
     </div>
   );
-};
-
-export default Banner;
+}

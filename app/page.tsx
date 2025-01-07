@@ -1,4 +1,3 @@
-import Head from "next/head";
 import AboutSection from "./_components/home/AboutSection";
 import Banner from "./_components/home/Banner";
 import ReviewsSection from "./_components/home/ReviewsSection";
