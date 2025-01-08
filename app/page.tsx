@@ -1,4 +1,3 @@
-import Head from "next/head";
 import AboutSection from "./_components/home/AboutSection";
 import Banner from "./_components/home/Banner";
 import ReviewsSection from "./_components/home/ReviewsSection";
@@ -13,9 +12,7 @@ export const metadata: Metadata = globalMetadata.home;
 export default function Home() {
   return (
     <>
-      <StructuredData
-        data={organizationStructuredData.home}
-      />
+      <StructuredData data={organizationStructuredData.home} />
       <Banner />
       <div className="h-100">
         <AboutSection />

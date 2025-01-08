@@ -22,7 +22,7 @@ const Button = ({
   handleClick,
 }: ButtonProps) => {
   if (variant === 1) {
-    className = `${className} bg-primary text-whiteish hover:emerald-600 focus-visible:outline-primary`;
+    className = `${className} bg-primary text-whiteish hover:bg-emerald-700 focus-visible:outline-primary`;
   } else if (variant === 2) {
     className = `${className} bg-secondary text-whiteish hover:bg-rose-400 focus-visible:outline-secondary`;
   }

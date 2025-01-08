@@ -31,7 +31,7 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full bg-whiteish">
+    <header className="w-full bg-whiteish z-50">
       <nav
         aria-label="Global"
         className="flex items-center justify-between p-6 lg:px-8"
@@ -78,9 +78,9 @@ export default function Header() {
 
             <PopoverPanel
               transition
-              className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
+              className="absolute -left-8 top-full z-50 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
             >
-              <div className="p-4">
+              <div className="p-4 ">
                 {services.map((item) => (
                   <div
                     key={item.name}
@@ -130,8 +130,8 @@ export default function Header() {
 
       {/** Mobile hamburger menu */}
       <Dialog open={mobileMenuOpen} onClose={closeMenu} className="lg:hidden">
-        <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div className="fixed inset-0 z-50" />
+        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <button
               type="button"
