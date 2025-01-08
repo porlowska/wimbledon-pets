@@ -1,8 +1,17 @@
 import { NextResponse } from "next/server";
 
 const handleServerError = (err: any) => {
-  //SendGrid Error
-  const code = err.response?.statusCode;
+
+  const code = err.response?.statusCode || 500;
+
+  if (err.name === "ValidationError") {
+    // Handle Yup validation errors
+    return NextResponse.json(
+      { error: err.message, details: err.errors || [] },
+      { status: 400 }
+    );
+  }
+
   switch (code) {
     case 400:
       return NextResponse.json({ error: err.message }, { status: 400 });

@@ -3,7 +3,7 @@ import toast from "react-hot-toast";
 type ErrorType = {
   code: number;
   name: string;
-  message: string;
+  message?: string;
   stack?: string;
 };
 const handleError = (err: any) => {
@@ -15,7 +15,10 @@ const handleError = (err: any) => {
   };
   switch (errDescription.code) {
     case 400:
-      toast.error("Ups! Someting went wrong, please try again later");
+      toast.error(
+        errDescription.message ||
+          "Ups! Someting went wrong, please try again later"
+      );
       break;
     case 401:
       toast.error("Wrong username or password! Please try again later!");
@@ -27,7 +30,7 @@ const handleError = (err: any) => {
       toast.error(
         "Ups! Someting went really wrong, please contact our develoeprs"
       );
-      console.error(`error: ${err}`);
+     console.error("Error Details:", err);
       break;
   }
 };

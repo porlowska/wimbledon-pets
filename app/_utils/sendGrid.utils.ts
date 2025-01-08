@@ -1,5 +1,4 @@
 import sgMail from "@sendgrid/mail";
-import handleServerError from "./serverErr.utils";
 import handleError from "./error.utils";
 import toast from "react-hot-toast";
 
@@ -32,7 +31,5 @@ export const sendEmail = async ({
     toast.success("Email sent");
   } catch (err: any) {
     handleError(err);
-    console.log("not sent");
-    toast.error("Email not sent");
   }
 };
