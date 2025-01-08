@@ -4,7 +4,7 @@ import handleError from "./error.utils";
 import toast from "react-hot-toast";
 
 type sendGridType = {
-  to: string;
+  to: string | string[];
   templateId: string;
   dynamicTemplateData: DynamicTemplateType;
 };
@@ -22,7 +22,7 @@ export const sendEmail = async ({
   try {
     const msg = {
       to,
-      from: process.env.FROM_EMAIL as string,
+      from: process.env.COMPANY_EMAIL as string,
       templateId,
       dynamic_template_data: dynamicTemplateData,
     };
