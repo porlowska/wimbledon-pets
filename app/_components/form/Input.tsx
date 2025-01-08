@@ -1,11 +1,18 @@
 type InputProp = {
   inputLabel: string;
   type: string;
-  placeholder?: string | ""
+  placeholder?: string | "";
   helperText?: string;
+  required?: boolean;
 };
 
-const Input = ({ inputLabel, type, placeholder, helperText }: InputProp) => {
+const Input = ({
+  inputLabel,
+  type,
+  placeholder,
+  helperText,
+  required,
+}: InputProp) => {
   return (
     <div>
       <div className="relative mt-2">
@@ -20,6 +27,7 @@ const Input = ({ inputLabel, type, placeholder, helperText }: InputProp) => {
           name={inputLabel}
           type={type}
           placeholder={placeholder}
+          required={required}
           className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm/6"
         />
       </div>

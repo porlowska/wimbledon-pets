@@ -4,24 +4,21 @@ import Textarea from "@/app/_components/form/Textarea";
 const ContactForm = () => {
   return (
     <form
-      //data-netlify="true"
       name="book-now"
-      //action="#"
-      //method="POST"
       className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
     >
       <input type="hidden" name="book-now" value="book-now" />
       <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-          <Input inputLabel={"Your Name"} type={"text"} />
-          <Input inputLabel={"Pet(s) name"} type={"text"} />
+          <Input inputLabel={"Your Name"} type={"text"} required />
+          <Input inputLabel={"Pet(s) name"} type={"text"} required />
 
           <div className="sm:col-span-2">
-            <Input inputLabel={"Email"} type={"email"} />
+            <Input inputLabel={"Email"} type={"email"} required />
           </div>
 
           <Input inputLabel={"Phone number"} type={"tel"} />
-          <Input inputLabel={"Postcode"} type={"text"} />
+          <Input inputLabel={"Postcode"} type={"text"} required />
 
           <div className="sm:col-span-2">
             <Textarea
