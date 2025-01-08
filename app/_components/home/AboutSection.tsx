@@ -8,7 +8,7 @@ const stats = [
 ];
 const AboutSection = () => {
   return (
-    <div className="px-6  sm:px-6  lg:px-8 py-4">
+    <div className="px-6  sm:px-6  lg:px-8 py-14">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
           Your pet deserves to be spoiled!
@@ -37,7 +37,7 @@ const AboutSection = () => {
               <div>
                 <stat.icon
                   aria-hidden="true"
-                  className="h-8 w-8 text-secondary mr-2"
+                  className="h-8 w-8 text-primary mr-2"
                 />
               </div>
 

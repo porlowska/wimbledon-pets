@@ -42,7 +42,7 @@ const Team = ({ variable }: teamProp) => {
           {team.map((person) => (
             <li
               key={person.name}
-              className="flex flex-col gap-4 lg:flex-row align-middle"
+              className="flex flex-col gap-4 lg:flex-row align-middle "
             >
               <PopModal
                 person={person}
@@ -52,7 +52,7 @@ const Team = ({ variable }: teamProp) => {
               <img
                 alt=""
                 src={person.imageUrl}
-                className="aspect-[4/5] w-52 flex-none rounded-2xl object-cover"
+                className="aspect-[4/5] w-80 sm:w-52 flex-none rounded-2xl object-cover"
               />
               <div className="flex-auto">
                 <h3 className="text-lg/8 font-semibold tracking-tight text-gray-900">

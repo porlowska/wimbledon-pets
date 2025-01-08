@@ -1,5 +1,7 @@
+"use client";
+import { motion } from "framer-motion";
+import { slideInBtm } from "@/app/animations/animations";
 import { featuredTestimonial, testimonials } from "../../_data/testimonials";
-import SocialLinks from "../SocialLinks";
 import Trustpilot from "../Trustpilot";
 
 function classNames(...classes: any) {
@@ -48,7 +50,13 @@ const ReviewsSection = () => {
           <Trustpilot leaveReview={false} rating={4.5} reviews={15} />
         </div>
         <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-gray-900 sm:mt-16 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-          <figure className="rounded-2xl bg-whiteish shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
+          <motion.figure
+            className="rounded-2xl bg-whiteish shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1"
+            variants={slideInBtm}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <blockquote className="p-6 text-lg tracking-tight text-gray-900 sm:p-12 sm:text-xl/8">
               <p>{`“${featuredTestimonial.comment}”`}</p>
             </blockquote>
@@ -66,7 +74,7 @@ const ReviewsSection = () => {
               </div>
               <p>{featuredTestimonial.date}</p>
             </figcaption>
-          </figure>
+          </motion.figure>
           {testimonials.map((columnGroup, columnGroupIdx) => (
             <div
               key={columnGroupIdx}
@@ -85,9 +93,13 @@ const ReviewsSection = () => {
                   )}
                 >
                   {column.map((testimonial) => (
-                    <figure
+                    <motion.figure
                       key={testimonial.author.pet}
                       className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
+                      variants={slideInBtm}
+                      initial="hidden"
+                      whileInView="visible"
+                      viewport={{ once: true, amount: 0.7 }}
                     >
                       <blockquote className="text-gray-900">
                         <p>{`“${testimonial.comment}”`}</p>
@@ -108,7 +120,7 @@ const ReviewsSection = () => {
                         </div>
                         <p>{testimonial.date}</p>
                       </figcaption>
-                    </figure>
+                    </motion.figure>
                   ))}
                 </div>
               ))}
