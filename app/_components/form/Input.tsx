@@ -1,6 +1,6 @@
 type InputProp = {
   inputLabel: string;
-  name?: string;
+  name: string;
   type: string;
   placeholder?: string | "";
   helperText?: string;
