@@ -21,14 +21,16 @@ export const sendEmail = async ({
   try {
     const msg = {
       to,
+      bcc: [
+        process.env.ADMIN_EMAIL as string,
+        process.env.COMPANY_EMAIL as string,
+      ],
       from: process.env.COMPANY_EMAIL as string,
       templateId,
       dynamic_template_data: dynamicTemplateData,
     };
-    console.log("Sending email with payload:", msg);
+
     await sgMail.send(msg);
-    console.log("Email sent");
-    toast.success("Email sent//sendGrid.utils.ts delte when done!");
   } catch (err: any) {
     handleServerError(err);
   }
