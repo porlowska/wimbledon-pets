@@ -9,7 +9,6 @@ import toast from "react-hot-toast";
 import handleError from "@/app/_utils/error.utils";
 
 const ContactForm = () => {
-  
   const [formData, setFormData] = useState({
     ownerName: "",
     petName: "",
@@ -26,27 +25,27 @@ const ContactForm = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit=async(e: any)=> {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const loadingToast = toast.loading("Sending message...");
     try {
-      await contactFormSchema.validate(formData, {abortEarly: false});
-
-      const response = await axios.post("/api/book-now",formData)
+      await contactFormSchema.validate(formData, { abortEarly: false });
+      await axios.post("/api/book-now", formData);
       toast.dismiss(loadingToast);
-      toast.success("Messgae sent successfully");
+      toast.success("Message sent successfully");
       setFormData({
-    ownerName: "",
-    petName: "",
-    email: "",
-    phone: "",
-    postcode: "",
-    message: "",
-  })
-  }catch(err:any){
-    toast.dismiss(loadingToast);
-    handleError(err)
-  }
+        ownerName: "",
+        petName: "",
+        email: "",
+        phone: "",
+        postcode: "",
+        message: "",
+      });
+    } catch (err: any) {
+      toast.dismiss(loadingToast);
+      handleError(err);
+    }
+  };
 
   return (
     <form

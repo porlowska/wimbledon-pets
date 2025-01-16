@@ -1,5 +1,5 @@
 import sgMail from "@sendgrid/mail";
-import handleError from "./error.utils";
+import handleServerError from "./serverErr.utils";
 import toast from "react-hot-toast";
 
 type sendGridType = {
@@ -25,11 +25,11 @@ export const sendEmail = async ({
       templateId,
       dynamic_template_data: dynamicTemplateData,
     };
-
+    console.log("Sending email with payload:", msg);
     await sgMail.send(msg);
     console.log("Email sent");
-    toast.success("Email sent");
+    toast.success("Email sent//sendGrid.utils.ts delte when done!");
   } catch (err: any) {
-    handleError(err);
+    handleServerError(err);
   }
 };

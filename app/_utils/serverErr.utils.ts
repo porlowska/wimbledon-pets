@@ -21,7 +21,7 @@ const handleServerError = (err: any) => {
       return NextResponse.json({ error: err.message }, { status: 403 });
     default: //500 error developers need to be informed
       return NextResponse.json(
-        { error: "Internal Sercer Error" },
+        { error: "Internal Server Error" },
         { status: 500 }
       );
   }

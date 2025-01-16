@@ -13,6 +13,7 @@ export async function POST(req: Request) {
 
     //middleware - validation with yup
     await contactFormSchema.validate(body, { abortEarly: false });
+    console.log("Validation successful");
 
     const { ownerName, petName, email, phone, postcode, message } = body;
 
@@ -32,12 +33,13 @@ export async function POST(req: Request) {
         message,
       },
     });
-
+ console.log("Email sent successfully");
     return NextResponse.json(
       { success: true, message: "Email sent successfully" },
       { status: 200 }
     );
   } catch (err: any) {
+    console.error("Error in POST /api/book-now:", err);
     return handleServerError(err);
   }
 }

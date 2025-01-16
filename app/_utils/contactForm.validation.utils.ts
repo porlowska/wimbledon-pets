@@ -10,7 +10,7 @@ export const contactFormSchema = yup.object().shape({
     .string()
     .min(2, "Must be at least 2 characters")
     .max(20, "Must be at most 20 characters")
-    .required("Last name is required"),
+    .required("Pet name is required"),
   email: yup
     .string()
     .email("Invalid email format")
