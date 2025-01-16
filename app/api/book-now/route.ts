@@ -15,11 +15,7 @@ export async function POST(req: Request) {
     const { ownerName, petName, email, phone, postcode, message } = body;
 
     await sendEmail({
-      to: [
-        email,
-        process.env.ADMIN_EMAIL as string,
-        process.env.COMPANY_EMAIL as string,
-      ],
+      to: email,
       templateId: "d-b3ebab22cbbe4a0e95832cd770a48970",
       dynamicTemplateData: {
         ownerName,

@@ -21,6 +21,10 @@ export const sendEmail = async ({
   try {
     const msg = {
       to,
+      bcc: [
+        process.env.ADMIN_EMAIL as string,
+        process.env.COMPANY_EMAIL as string,
+      ],
       from: process.env.COMPANY_EMAIL as string,
       templateId,
       dynamic_template_data: dynamicTemplateData,
