@@ -1,4 +1,3 @@
-"use client";
 import { services } from "@/app/_data/services";
 import Link from "next/link";
 

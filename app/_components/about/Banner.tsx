@@ -1,5 +1,3 @@
-"use client";
-
 import Button from "../Button";
 
 const Banner = () => {
