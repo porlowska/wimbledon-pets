@@ -14,7 +14,7 @@ const ServicesSection = () => {
                 className="object-cover object-center"
               />
               <div
-                aria-hidden="true"
+                aria-label={`Learn more about ${service.name}`}
                 className="flex items-end p-4 opacity-0 group-hover:opacity-100"
               >
                 <Link
