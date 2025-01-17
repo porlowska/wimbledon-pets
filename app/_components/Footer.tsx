@@ -24,7 +24,10 @@ export default function Footer() {
             variant={2}
           />
           <Link href={"#"}>
-            <ChevronUpIcon className="h-10 w-12 text-whiteish hover:text-rose-400 " />
+            <ChevronUpIcon
+              className="h-10 w-12 text-whiteish hover:text-rose-400"
+              aria-label="Back to top"
+            />
           </Link>
         </div>
         <Logo className="pb-8" w={130} h={100} variant={1} />
