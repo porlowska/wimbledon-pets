@@ -1,0 +1,21 @@
+{
+  "name": "Wimbledon Pets",
+  "short_name": "Wimbledon Pets",
+  "description": "Pet care services including dog walking, training, and house sitting.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafafa",
+  "theme_color": "#114430",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
